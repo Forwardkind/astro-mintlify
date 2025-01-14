@@ -79,6 +79,7 @@ const { iconName, title, iconStyles, href } = Astro.props
     color: var(--sl-color-white);
     line-height: var(--sl-line-height-headings);
     gap: 1rem;
+    @apply text-base;
   }
 
   .card .body {
@@ -88,5 +89,12 @@ const { iconName, title, iconStyles, href } = Astro.props
       calc(0.5rem + 1vw),
       var(--sl-text-body)
     );
+  }
+
+  .card .title svg {
+    @apply size-6;
+  }
+  .card .body {
+    @apply text-sm text-muted-foreground;
   }
 </style>

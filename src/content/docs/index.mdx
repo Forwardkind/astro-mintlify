@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: Get started building your docs site with Starlight.
+title: Beautiful Documentation Without the Hassle.
+description: An approachable, performant and versatile framework for building web user interfaces.
 template: splash
 hero:
   tagline: Welcome to the home of your new documentation
@@ -16,25 +16,19 @@ hero:
       icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components'
+import { Card, CardGrid } from '../../components/components'
 
-## Next steps
+## Learn More
 
 <CardGrid>
-  <a href='/'>
-    <Card title='Update content' icon='pen'>
-      Edit `index.mdx` to see this page change.
+  <a href='/getting-started/introduction'>
+    <Card title='Getting started' iconName='Rocket'>
+      Learn how to quickly get your documentation site up and running.
     </Card>
   </a>
-  <a href='/'>
-    <Card title='Add new content' icon='add-document'>
+  <a href='https://starlight.astro.build/'>
+    <Card title='Learn more about Starlight' iconName='Book'>
       Add Markdown or MDX files to `docs` to create new pages.
     </Card>
   </a>
-  <Card title='Configure your site' icon='setting'>
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title='Read the docs' icon='open-book'>
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
-  </Card>
 </CardGrid>
