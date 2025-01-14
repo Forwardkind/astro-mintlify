@@ -317,7 +317,7 @@ mobile-starlight-toc .dropdown a {
 /* STEP STYLES */
 
 .sl-steps > li::before {
-  @apply bg-transparent shadow-none border border-border flex items-center justify-center;
+  @apply bg-transparent shadow-none border border-border flex items-center justify-center !important;
 }
 
 .sl-steps > li::after {
