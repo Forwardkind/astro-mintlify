@@ -369,18 +369,20 @@ starlight-tabs ul[role='tablist'] a[role='tab'][aria-selected='true'] {
   @apply border-primary;
 }
 
+/* SEARCH DIALOG STYLES */
+
+site-search .dialog-frame {
+  @apply bg-background;
+}
+
+.astro-v37mnknz {
+  @apply border-border;
+}
+
 * {
   @apply border-border;
 }
 
 body {
   @apply bg-background text-foreground;
-}
-
-.header {
-  @apply border-0 fixed shrink-0 w-full z-50 bg-background h-0 p-0;
-}
-
-.hero .action.primary {
-  @apply bg-primary;
 }
