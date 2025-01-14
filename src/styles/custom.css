@@ -47,7 +47,7 @@
   --sl-color-gray-7: #f0f8fa;
   --sl-color-black: #ffffff;
 
-  --sl-color-hairline-light: pink;
+  /* --sl-color-hairline-light: hsl(var(--secondary)); */
 
   --sl-color-text-accent: hsl(221.2 83.2% 53.3%);
 
