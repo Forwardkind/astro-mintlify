@@ -353,6 +353,10 @@ starlight-tabs ul[role='tablist'] a[role='tab'][aria-selected='true'] {
   @apply border-none;
 }
 
+.tab:where(.astro-esqgolmp) > :where(.astro-esqgolmp)[role='tab'] {
+  @apply border-b-border;
+}
+
 /* FILE TREE STYLES */
 
 .sl-markdown-content starlight-file-tree {
