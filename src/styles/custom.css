@@ -15,7 +15,7 @@
   --sl-color-gray-6: #022c35;
   --sl-color-black: #0b1b1f;
   --sl-color-text-accent: hsl(217.2, 91.2%, 59.8%);
-  --sl-color-hairline-light: hsl(var(--secondary));
+  /* --sl-color-hairline-light: hsl(var(--secondary)); */
 
   --sl-color-bg-sidebar: #020817;
   --sl-color-bg: #020817;
@@ -65,13 +65,15 @@
   --sl-color-hairline-shade: var(--border);
 
   --warning: 42 100% 62%;
-  --warning-foreground: 48 97% 77%;
+  /* --warning-foreground: 48 97% 77%; */
+  --warning-foreground: 38 92% 50%;
 
-  --note-foreground: 210 100% 72%;
+  /* --note-foreground: 210 100% 72%; */
+  --note-foreground: 207 100% 23%;
   --note: 207 100% 23%;
 
   --tip: 272 72% 47%;
-  --tip-foreground: 264 67% 35%;
+  /* --tip-foreground: 264 67% 35%; */
 }
 
 /* BADGE STYLES */
@@ -265,19 +267,19 @@ mobile-starlight-toc .dropdown a {
 /* ASIDE STYLES */
 
 .starlight-aside--caution {
-  @apply bg-warning-foreground/10 border border-warning-foreground/50 text-warning-foreground font-light [&>svg]:text-warning-foreground  relative w-full rounded-lg px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4  [&>svg~*]:pl-7;
+  @apply bg-warning-foreground/10 border border-warning-foreground/50 text-[var(--sl-color-asides-text-accent)] font-light [&>svg]:text-warning-foreground  relative w-full rounded-lg px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4  [&>svg~*]:pl-7;
 }
 
 .starlight-aside--note {
-  @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7 bg-note/10  border-note-foreground/50 text-note-foreground font-light;
+  @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7 bg-note/10  border-note-foreground/50 text-[var(--sl-color-asides-text-accent)] font-light;
 }
 
 .starlight-aside--tip {
-  @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-purple-700 [&>svg~*]:pl-7 bg-purple-400/10  border-purple-700/50 text-purple-200 font-light;
+  @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-purple-700 [&>svg~*]:pl-7 bg-purple-400/10  border-purple-700/50 text-[var(--sl-color-asides-text-accent)] font-light;
 }
 
 .starlight-aside--danger {
-  @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-red-700 [&>svg~*]:pl-7 bg-red-400/10  border-red-700/50 text-red-200 font-light;
+  @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-red-700 [&>svg~*]:pl-7 bg-red-400/10  border-red-700/50 text-[var(--sl-color-asides-text-accent)] font-light;
 }
 
 .sl-flex .stack .astro-jbfsktt5 {
