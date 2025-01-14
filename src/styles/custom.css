@@ -15,6 +15,7 @@
   --sl-color-gray-6: #022c35;
   --sl-color-black: #0b1b1f;
   --sl-color-text-accent: hsl(217.2, 91.2%, 59.8%);
+  --sl-color-hairline-light: hsl(var(--secondary));
 
   --sl-color-bg-sidebar: #020817;
   --sl-color-bg: #020817;
@@ -47,7 +48,7 @@
   --sl-color-gray-7: #f0f8fa;
   --sl-color-black: #ffffff;
 
-  /* --sl-color-hairline-light: hsl(var(--secondary)); */
+  --sl-color-hairline-light: hsl(var(--secondary));
 
   --sl-color-text-accent: hsl(221.2 83.2% 53.3%);
 
