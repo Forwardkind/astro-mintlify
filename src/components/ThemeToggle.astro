@@ -11,10 +11,10 @@ const id = `moon-mask-${crypto.randomBytes(4).toString('hex')}`
 
 <starlight-rapide-theme-select>
   <button
-    aria-label={Astro.locals.t('themeSelect.accessibleLabel')}
+    aria-label="Toggle theme"
     aria-live="polite"
     class="sl-flex"
-    title={Astro.locals.t('themeSelect.accessibleLabel')}
+    title="Toggle theme"
   >
     <svg aria-hidden="true" height="16" viewBox="0 0 24 24" width="16">
       <mask class="moon" id={id}>
@@ -164,7 +164,7 @@ const id = `moon-mask-${crypto.randomBytes(4).toString('hex')}`
 
   /** Update select menu UI, document theme, and local storage state. */
   function onThemeChange(theme: Theme): void {
-    StarlightThemeProvider.updatePickers(theme)
+    // StarlightThemeProvider.updatePickers(theme)
     document.documentElement.dataset['theme'] = theme === 'auto' ? getPreferredColorScheme() : theme
     storeTheme(theme)
   }
