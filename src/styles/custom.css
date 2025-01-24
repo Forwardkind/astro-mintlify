@@ -480,7 +480,7 @@ site-search dialog .pagefind-ui .pagefind-ui__search-input:focus-visible {
 }
 
 site-search dialog {
-  background-color: var(--sl-color-black);
+  background-color: var(--background);
   box-shadow: none;
   min-height: auto;
 }
@@ -495,13 +495,13 @@ site-search dialog #starlight__search {
 }
 
 site-search dialog .pagefind-ui .pagefind-ui__search-input {
-  background-color: var(--sl-rapide-ui-bg-color);
-  border: 1px solid var(--sl-color-gray-4);
+  background-color: var(hsl(--background));
+  border: 1px solid var(hsl(--border));
 }
 
 site-search dialog .pagefind-ui .pagefind-ui__search-input:focus-visible {
-  border-color: var(--sl-color-accent);
-  outline: 1px solid var(--sl-color-accent);
+  border-color: var(hsl(--primary));
+  outline: 1px solid var(hsl(--primary));
 }
 
 site-search dialog .pagefind-ui .pagefind-ui__message {
@@ -517,7 +517,7 @@ site-search
   #starlight__search
   .pagefind-ui
   :is(.pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)), .pagefind-ui__result-nested) {
-  border-inline: 1px solid var(--sl-rapide-ui-border-color);
+  border-inline: 1px solid var(hsl(--border));
   outline-offset: -1px;
 }
 
@@ -528,7 +528,7 @@ site-search
   :is(.pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)), .pagefind-ui__result-nested):not(
     :focus-within
   ) {
-  background-color: var(--sl-rapide-ui-bg-color);
+  background-color: var(hsl(--background));
 }
 
 site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-inner {
@@ -536,13 +536,13 @@ site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-inner {
 }
 
 site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-inner > :first-child {
-  border-top: 1px solid var(--sl-rapide-ui-border-color);
+  border-top: 1px solid var(hsl(--border));
 }
 
 site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-inner > :last-child {
-  border-bottom: 1px solid var(--sl-rapide-ui-border-color);
+  border-bottom: 1px solid var(hsl(--border));
 }
 
 site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-excerpt mark {
-  color: var(--sl-color-accent-high);
+  color: var(hsl(--primary));
 }
