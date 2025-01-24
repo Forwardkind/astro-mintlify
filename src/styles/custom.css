@@ -5,7 +5,7 @@
 :root {
   --sl-color-accent-low: #440d13;
   --sl-color-accent: #c60035;
-  --sl-color-accent-high: #fab3b3;
+  --sl-color-accent-high: 214.3 31.8% 91.4%;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #e1f1f6;
   --sl-color-gray-2: #b2c6cb;
@@ -557,6 +557,6 @@ site-search dialog .pagefind-ui__result-link:focus {
   background-color: hsl(var(--secondary));
 }
 
-pagefind-ui__result-nested {
+.pagefind-ui__result-link.svelte-4xnkmf {
   @apply hover:border-black;
 }
