@@ -546,3 +546,13 @@ site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-inner > 
 site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-excerpt mark {
   color: hsl(var(--primary));
 }
+
+site-search dialog .pagefind-ui__result-link:hover {
+  border-color: hsl(var(--border));
+}
+
+site-search dialog .pagefind-ui__result-link:active,
+site-search dialog .pagefind-ui__result-link:focus {
+  border-color: hsl(var(--border));
+  background-color: hsl(var(--secondary));
+}
