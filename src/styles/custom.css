@@ -556,3 +556,7 @@ site-search dialog .pagefind-ui__result-link:focus {
   border-color: hsl(var(--border));
   background-color: hsl(var(--secondary));
 }
+
+pagefind-ui__result-nested {
+  @apply hover:border-black;
+}
