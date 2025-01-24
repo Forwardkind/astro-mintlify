@@ -548,7 +548,7 @@ site-search dialog #starlight__search .pagefind-ui .pagefind-ui__result-excerpt 
 }
 
 /* site-search dialog .pagefind-ui__result-link:hover {
-  @apply border-rose-500;
+  border-color: hsl(var(--border));
 } */
 
 site-search dialog .pagefind-ui__result-link:active,
@@ -557,6 +557,6 @@ site-search dialog .pagefind-ui__result-link:focus {
   background-color: hsl(var(--secondary));
 }
 
-site-search dialog .pagefind-ui__result-link.svelte-4xnkmf {
+.pagefind-ui__result-link.svelte-4xnkmf {
   @apply hover:border-primary;
 }
