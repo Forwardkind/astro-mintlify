@@ -13,7 +13,7 @@ export default defineConfig({
       },
       customCss: ['./src/styles/custom.css', './src/styles/tailwind.css'],
       social: {
-        github: 'https://github.com/withastro/starlight',
+        github: 'https://github.com/alexwhitmore/astro-mintlify',
       },
       components: {
         Header: './src/components/Header.astro',
