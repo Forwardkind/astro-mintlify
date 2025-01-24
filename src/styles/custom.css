@@ -560,3 +560,17 @@ site-search dialog .pagefind-ui__result-link:focus {
 /* .pagefind-ui__result-link.svelte-4xnkmf {
   @apply hover:border-primary;
 } */
+
+#starlight__search
+.pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):focus-within,
+#starlight__search .pagefind-ui__result-nested:focus-within {
+background-color: hsl(var(--secondary));
+}
+
+#starlight__search .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):hover,
+#starlight__search
+  .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)):focus-within,
+#starlight__search .pagefind-ui__result-nested:hover,
+#starlight__search .pagefind-ui__result-nested:focus-within {
+  outline: 1px solid hsl(var(--primary));
+}
