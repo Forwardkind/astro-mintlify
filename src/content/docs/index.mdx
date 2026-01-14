@@ -1,34 +1,34 @@
 ---
-title: Beautiful Documentation Without the Hassle.
-description: An approachable, performant and versatile framework for building web user interfaces.
-template: splash
+title: Welcome
+description: A guide in my new Starlight docs site.
+
 hero:
-  tagline: Welcome to the home of your new documentation
-  image:
-    file: ../../assets/hero.svg
-  actions:
-    - text: Getting started
-      link: /getting-started/introduction
-      icon: right-arrow
-      variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+  tagline: Welcome to the public documentation of Forwardkind Cooperative.
 ---
 
+import GroupName from '../../components/GroupName.astro'
 import { Card, CardGrid } from '../../components/components'
 
-## Learn More
+<GroupName>Getting Started</GroupName>
+
+# Introduction
+
+Welcome to the public documentation of Forwardkind Cooperative.
 
 <CardGrid>
-  <a href='/getting-started/introduction'>
-    <Card title='Getting started' iconName='Rocket'>
-      Learn how to quickly get your documentation site up and running.
-    </Card>
-  </a>
-  <a href='https://starlight.astro.build/'>
-    <Card title='Learn more about Starlight' iconName='Book'>
-      Add Markdown or MDX files to `docs` to create new pages.
-    </Card>
-  </a>
+  <Card
+    title='Create Pages'
+    iconName='SquarePen'
+    href='/getting-started/overview'>
+    Customize your docs to your company's colors and brands.
+  </Card>
+  <Card title='Customize Theme' iconName='Palette' href='/essentials/theming'>
+    Generate a custom theme without accessibility being an afterthought.
+  </Card>
+  <Card title='Use Components' iconName='Code' href='/components/badge'>
+    Build interactive features and designs to guide your users.
+  </Card>
+  <Card title='Deploy Docs' iconName='Rocket' href='/essentials/deployments'>
+    Check out our showcase of our favorite documentation.
+  </Card>
 </CardGrid>
