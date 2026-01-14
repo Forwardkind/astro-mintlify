@@ -9,8 +9,8 @@ export default defineConfig({
     starlight({
       title: 'Forwardkind',
       logo: {
-        light: './src/assets/fk-favicon.png',
-        dark: './src/assets/light-logo.svg',
+        light: './src/assets/fk-logo.svg',
+        dark: './src/assets/fk-logo.svg',
       },
       customCss: ['./src/styles/custom.css', './src/styles/tailwind.css'],
       social: {
