@@ -4,9 +4,7 @@ import tailwind from '@astrojs/tailwind'
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://forwardkind.github.io',
-  base: '/astro-mintlify',
-  trailingSlash: "always",
+  site: 'https://docs.forwardkind.com',
   integrations: [
     starlight({
       title: 'starmint',
