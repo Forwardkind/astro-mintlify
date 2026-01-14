@@ -6,6 +6,7 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   site: 'https://forwardkind.github.io',
   base: '/astro-mintlify',
+  trailingSlash: "always",
   integrations: [
     starlight({
       title: 'starmint',
