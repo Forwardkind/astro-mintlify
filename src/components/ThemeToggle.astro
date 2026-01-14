@@ -142,7 +142,7 @@ const id = `moon-mask-${crypto.randomBytes(4).toString('hex')}`
 
   /** Get a typesafe theme string from any JS value (unknown values are coerced to `'auto'`). */
   function parseTheme(theme: unknown): Theme {
-    return theme === 'auto' || theme === 'dark' || theme === 'light' ? theme : 'auto'
+    return theme === 'light' || theme === 'dark' || theme === 'light' ? theme : 'auto'
   }
 
   /** Load the user’s preference from `localStorage`. */

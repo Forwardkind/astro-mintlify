@@ -1,7 +1,6 @@
 ---
 import Search from "@astrojs/starlight/components/Search.astro";
 import type { Props } from "@astrojs/starlight/props";
-import ThemeToggle from "./ThemeToggle.astro";
 import { HeaderMenu } from "./header-menu";
 ---
 
@@ -66,15 +65,12 @@ import { HeaderMenu } from "./header-menu";
             <path d="m9 18 6-6-6-6"></path>
           </svg>
         </a>
-
-        <ThemeToggle {...Astro.props} />
       </div>
 
       <div class="flex">
         <div class="flex lg:hidden gap-2 items-center">
           <Search {...Astro.props} />
           <HeaderMenu client:load />
-          <ThemeToggle {...Astro.props} />
         </div>
       </div>
     </div>
